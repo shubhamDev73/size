@@ -1,0 +1,7 @@
+#! /bin/bash
+
+for (( i=0; i<=5; i=i+1 )); do #1024*1024*1024
+	echo "Files with size $i"
+	find -size $i
+	echo
+done
